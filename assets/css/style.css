@@ -1,0 +1,1176 @@
+:root {
+  --primary: #fbf2d5;
+  --secondary: #f6e8e8;
+  --tertiary: #faf0ef;
+  --black: #070208;
+  --grey: #afafb0;
+  --white: #fafafa;
+  --gold: #895f2f;
+  --low-gold: #d5a66f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nanyum Myeongjo";
+}
+body {
+  background-color: var(--gold);
+  color: var(--black);
+}
+
+/* Navbar */
+.navbar {
+  padding: 0 !important;
+  border-bottom: 1px solid var(--grey);
+  background: transparent;
+  position: fixed !important;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+/* Scroll Navbar */
+nav.sticky {
+  margin: auto;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: var(--primary);
+}
+.navbar .container-fluid {
+  padding: 0 !important;
+}
+.navbar .container-fluid .navbar-brand {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700 !important;
+  font-style: italic;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.navbar .container-fluid .navbar-nav {
+  width: 32%;
+  left: 40%;
+  position: absolute;
+  transform: translateX(-22%);
+  justify-content: space-between;
+}
+.navbar .container-fluid .nav-item {
+  padding: 0 10px;
+}
+.navbar .container-fluid .nav-link {
+  color: var(--black) !important;
+  font-size: 20px !important;
+}
+.navbar .container-fluid .navbar-toggler {
+  border: none;
+  padding: 0;
+}
+.navbar .container-fluid .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .container-fluid .nav-icon {
+  width: 24px;
+  height: 24px;
+}
+.navbar .container-fluid .desktop-hamburger,
+.navbar .container-fluid .shop-logo {
+  visibility: visible;
+  pointer-events: none;
+  border-right: 1px solid var(--grey) !important;
+  border-left: 1px solid var(--grey) !important;
+  color: var(--black);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Hero Section */
+#hero {
+  padding: 8rem 4rem 2rem;
+  background-image: url("../img/bg-hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#hero .container-fluid .row .happy-customers {
+  width: 14%;
+}
+#hero .container-fluid .row .happy-customer-img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: max-content;
+}
+#hero .container-fluid .row .happy-customer-img img:first-child {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1.5px solid var(--gold);
+  position: relative;
+  z-index: 1;
+}
+#hero .container-fluid .row .happy-customer-img img:last-child {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1.5px solid var(--gold);
+  position: absolute;
+  left: 35px;
+  z-index: 2;
+}
+#hero .container-fluid .row .happy-customers p {
+  line-height: normal;
+  font-size: 16px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+#hero .container-fluid .row .hero-text-center h1 {
+  font-size: 5rem;
+}
+#hero .container-fluid .row .hero-text-center p {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+#hero .container-fluid .row .hero-text-center .btn-hero {
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 1.2rem;
+  padding: 0.75rem 1.75rem;
+}
+#hero .container-fluid .row .hero-video {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+#hero .container-fluid .row .hero-video img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 2/3;
+  border-radius: 20px;
+}
+#hero .container-fluid .row .hero-video .video-text {
+  background-color: var(--primary);
+  border: 1px solid var(--grey);
+  width: 130px;
+  height: 130px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  top: -20px;
+}
+#hero .container-fluid .row .hero-video .video-btn {
+  background-color: var(--black);
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 90px;
+  z-index: 3;
+}
+#hero .container-fluid .row .hero-video .video-btn .fa-play {
+  font-size: 12px;
+  color: var(--white);
+}
+#hero .container-fluid .row .hero-image {
+  position: relative;
+  height: 450px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+#hero .container-fluid .row .hero-image:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-104deg, #fca4a2 0%, #f3a36e 100%);
+  transform: translate3d(-1px, 5px, 0) scale(0.83);
+  filter: blur(60px);
+  opacity: var(0.16);
+  transition: opacity 0.3s;
+  border-radius: inherit;
+}
+#hero .container-fluid .row .hero-image::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  border-radius: inherit;
+}
+#hero .container-fluid .row .hero-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 3/4;
+  position: relative;
+}
+#hero .container-fluid .row .hero-text-secondary {
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#hero .container-fluid .row .hero-text-secondary h1 {
+  font-family: "Corinthia";
+  font-size: 6rem;
+  color: var(--gold);
+}
+#hero .container-fluid .row .hero-text-secondary p {
+  width: 25%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+#hero .container-fluid .row .hero-text-secondary .arrow-down-btn {
+  background-color: var(--black);
+  padding: 1.25rem 0.25rem;
+  transition: transform 0.5s ease-in-out;
+}
+#hero .container-fluid .row .hero-text-secondary .arrow-down-btn:hover {
+  transform: translateY(15px);
+}
+#hero .container-fluid .row .hero-text-secondary .arrow-down-btn svg {
+  width: 25px;
+  height: 25px;
+  color: var(--white);
+}
+#hero .container-fluid .row .learn-more {
+  width: max-content;
+  margin-top: 5rem;
+  font-size: 1.5rem;
+}
+#hero .container-fluid .row .learn-more a {
+  color: var(--black);
+  text-decoration: none;
+  border-bottom: 1px solid var(--black);
+}
+#hero .container-fluid .row .learn-more a svg {
+  width: 12px;
+  height: 12px;
+}
+
+/* Featured Section */
+#featured .container-fluid {
+  background-color: var(--secondary);
+  padding: 0;
+}
+#featured .container-fluid .featured-content {
+  padding: 2rem;
+  border-top: 1px solid var(--black);
+  border-bottom: 1px solid var(--black);
+}
+#featured .container-fluid .featured-content p {
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
+
+/* Popular Section */
+#popular .container-fluid {
+  background-color: var(--secondary);
+  padding: 6rem 4rem;
+  margin: auto auto;
+}
+#popular .container-fluid .popular-heading h1 {
+  line-height: normal;
+}
+#popular .container-fluid .popular-heading h1 .position-left {
+  margin-left: -100px;
+}
+#popular .container-fluid .popular-heading h1 .position-left span {
+  font-family: "Corinthia";
+  font-size: 3rem;
+  color: var(--gold);
+}
+#popular .container-fluid .popular-heading h1 .position-right {
+  margin-left: 150px;
+}
+#popular .container-fluid .popular-image .image {
+  width: 25%;
+  margin-top: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+#popular .container-fluid .popular-image .image:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-104deg, #fca4a2 0%, #f3a36e 100%);
+  transform: translate3d(-1px, 5px, 0) scale(0.8);
+  filter: blur(60px);
+  opacity: var(0.57);
+  transition: opacity 0.3s;
+  border-radius: inherit;
+}
+#popular .container-fluid .popular-image .image::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  border-radius: inherit;
+}
+#popular .container-fluid .popular-image .image img {
+  aspect-ratio: 3/4;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+#popular .container-fluid .popular-image .image p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+#popular .container-fluid .popular-description p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+#popular .container-fluid .popular-image .image-3 .arrow {
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+}
+#popular .container-fluid .popular-image .image-3 .arrow p {
+  font-family: "Corinthia";
+  font-size: 2rem;
+  color: var(--gold);
+}
+
+/* Discount Section */
+#discount .container-fluid {
+  background-color: var(--tertiary);
+  padding: 6rem 4rem;
+  margin: auto auto;
+}
+#discount .container-fluid .discount-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+#discount .container-fluid .discount-image .circle {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  right: 180px;
+  top: -40px;
+}
+#discount .container-fluid .discount-image .circle .text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#discount .container-fluid .discount-image .circle .text span {
+  position: absolute;
+  left: 50%;
+  font-size: 0.8rem;
+  font-family: "Poppins";
+  transform-origin: 0 80px;
+  font-weight: 500;
+}
+#discount .container-fluid .discount-image .circle .logo {
+  position: absolute;
+}
+#discount .container-fluid .discount-image .images {
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding-left: 80px;
+}
+#discount .container-fluid .discount-image .images .image-1 {
+  width: 60%;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  border-radius: 50px;
+  border: 0.5px solid var(--low-gold);
+}
+#discount .container-fluid .discount-image .images .image-2 {
+  width: 35%;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+  border: 0.5px solid var(--low-gold);
+  box-shadow: -10px 10px 80px rgba(243, 163, 110, 0.8),
+    60px -10px 80px rgba(252, 164, 162, 0.5);
+}
+#discount .container-fluid .discount-image .images p {
+  position: absolute;
+  bottom: 20px;
+  left: 100px;
+  transform: rotate(-15deg);
+  font-family: "Corinthia", cursive;
+  font-size: 2.5rem;
+  color: var(--gold);
+  line-height: 40px;
+  margin: 0;
+}
+#discount .container-fluid .discount-text {
+  width: 50%;
+}
+#discount .container-fluid .discount-text h1 {
+  font-size: 4rem;
+}
+#discount .container-fluid .discount-text p {
+  font-size: 1.5rem;
+}
+#discount .container-fluid .discount-text .btn-discount {
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 1.2rem;
+  padding: 0.75rem 1.75rem;
+}
+
+/* Signature Section */
+#signature .container-fluid {
+  background-color: var(--secondary);
+  padding: 6rem 4rem;
+  margin: auto auto;
+}
+#signature .container-fluid .signature-heading h1 {
+  font-size: 3rem;
+}
+#signature .container-fluid .signature-content .tabs {
+  width: 700px;
+  margin: 2rem auto 4rem;
+}
+#signature .container-fluid .signature-content .tabs .nav-item {
+  width: max-content;
+  background-color: var(--tertiary);
+  border: 1px solid var(--low-gold);
+}
+#signature .container-fluid .signature-content .tabs .nav-item:hover {
+  background-color: var(--secondary);
+}
+#signature .container-fluid .signature-content .tabs .nav-item .nav-link {
+  color: var(--black);
+  width: 100%;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#signature .container-fluid .signature-content .tabs .nav-item .active {
+  background-color: var(--black);
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--white);
+  border: none;
+}
+#signature .container-fluid .signature-content .cards-container {
+  gap: 20px;
+}
+#signature .container-fluid .signature-content .cards-container .card {
+  border-radius: 0;
+  width: calc(30% - 20px);
+  margin-bottom: 20px;
+  border: 1px solid var(--low-gold);
+}
+#signature .container-fluid .signature-content .cards-container .card img {
+  border-radius: 0;
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  height: auto;
+}
+#signature
+  .container-fluid
+  .signature-content
+  .cards-container
+  .card
+  .card-body {
+  background-color: var(--tertiary);
+}
+#signature .container-fluid .signature-content .indicator-btn {
+  margin: 1rem 3.8rem 0;
+}
+#signature .container-fluid .signature-content .card-indicator .indicator {
+  width: 5px;
+  height: 5px;
+  padding: 0;
+  background-color: var(--grey);
+  border-radius: 50%;
+  padding: 0;
+}
+#signature .container-fluid .signature-content .card-indicator .active {
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  background-color: var(--black);
+  border-radius: 50%;
+  padding: 0;
+  position: relative;
+}
+#signature .container-fluid .signature-content .card-indicator .active:after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  padding: 0;
+  margin: auto auto;
+  background-color: var(--white);
+  border-radius: 50%;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Benefits Section */
+#benefits .container-fluid {
+  background-color: var(--tertiary);
+  padding: 6rem 4rem;
+  margin: auto auto;
+}
+#benefits .container-fluid .benefits-heading h1 {
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+}
+#benefits .container-fluid .benefits-heading h1 span {
+  font-family: "Corinthia";
+  color: var(--gold);
+  font-size: 3.5rem;
+}
+#benefits .container-fluid .benefits-content .left {
+  width: 40%;
+}
+#benefits .container-fluid .benefits-content .left p {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
+#benefits .container-fluid .benefits-content .left .logo {
+  font-size: 2.5rem;
+}
+#benefits .container-fluid .benefits-content .right {
+  display: flex;
+  justify-content: start;
+  width: 50%;
+  position: relative;
+}
+#benefits .container-fluid .benefits-content .right .image-1 {
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  width: 45%;
+  border: 1px solid var(--low-gold);
+}
+#benefits .container-fluid .benefits-content .right .image-2 {
+  width: 30%;
+  left: 40%;
+  top: 20px;
+  transform: translate(-40%, 20px);
+  border: 1px solid var(--low-gold);
+  position: absolute;
+  box-shadow: -10px 10px 80px rgba(243, 163, 110, 0.8),
+    60px -10px 80px rgba(252, 164, 162, 0.5);
+}
+#benefits .container-fluid .benefits-content .right p {
+  font-family: "Corinthia";
+  font-size: 3.5rem;
+  color: var(--gold);
+  line-height: normal;
+  position: absolute;
+  right: 150px;
+  transform: rotate(340deg);
+  z-index: 5;
+  bottom: 0;
+}
+
+/* Socmed Section */
+#socmed .container-fluid {
+  background-color: var(--secondary);
+  padding: 6rem 4rem;
+  margin: auto auto;
+}
+#socmed .container-fluid .socmed-heading {
+  margin-bottom: 3rem;
+}
+#socmed .container-fluid .socmed-heading h1 {
+  font-size: 3rem;
+}
+#socmed .container-fluid .socmed-content {
+  margin-bottom: 20px;
+  gap: 20px;
+  padding: 0 8rem;
+}
+#socmed .container-fluid .socmed-content img {
+  width: calc(33.33% - 20px);
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  border: 1px solid var(--low-gold);
+}
+#socmed .container-fluid .btn-socmed {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 0.75rem 1.75rem;
+  width: max-content;
+  font-size: 1.2rem;
+  margin: 2.5rem auto 0;
+}
+
+/* Subscribe Section */
+#subscribe .container-fluid {
+  padding: 6rem 4rem;
+  margin: auto auto;
+}
+#subscribe .container-fluid .subscribe-heading h1 {
+  font-size: 3rem;
+}
+#subscribe .container-fluid .subscribe-heading p {
+  font-size: 1.5rem;
+}
+#subscribe .container-fluid .subscribe-form input {
+  background-color: var(--tertiary);
+  padding: 0.75rem 1.75rem;
+  border: 0.5px solid var(--grey);
+  font-size: 1.4rem;
+  width: 30%;
+}
+#subscribe .container-fluid .subscribe-form input::placeholder {
+  color: var(--black);
+  font-size: 1.2rem;
+}
+#subscribe .container-fluid .subscribe-form .btn-subscribe {
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 1.2rem;
+  padding: 0.75rem 1.75rem;
+}
+
+/* Footer */
+footer .container-fluid {
+  padding: 2rem 0 0;
+  background-color: var(--secondary);
+  margin: auto auto;
+}
+footer .container-fluid .top {
+  padding: 0 2rem;
+}
+footer .container-fluid .top .left .navbar-brand {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2rem;
+}
+footer .container-fluid .top .second-left ul li {
+  list-style-type: none;
+}
+footer .container-fluid .top .second-left ul .title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+footer .container-fluid .top .second-left ul li a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 1.4rem;
+}
+footer .container-fluid .top .second-right ul li {
+  list-style-type: none;
+}
+footer .container-fluid .top .second-right ul .title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+footer .container-fluid .top .second-right ul li a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 1.4rem;
+}
+footer .container-fluid .top .right ul li {
+  border: 1px solid var(--grey);
+  padding: 0.75rem 1.25rem;
+  text-align: center;
+  list-style-type: none;
+}
+footer .container-fluid .top .right ul li:hover {
+  background-color: var(--tertiary);
+}
+footer .container-fluid .top .right ul li a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 1.4rem;
+}
+footer .container-fluid .bottom p {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+footer .container-fluid .top .second-left ul,
+footer .container-fluid .top .second-right ul,
+footer .container-fluid .top .right ul {
+  padding-left: 0;
+}
+
+@media (max-width: 992px) {
+  .navbar .container-fluid .navbar-brand {
+    top: 1rem;
+  }
+
+  .navbar .container-fluid .navbar-collapse {
+    position: fixed;
+    top: 73px;
+    left: 0;
+    padding: 15px;
+    width: 300px;
+    height: calc(100% - 60px);
+    background-color: var(--primary);
+    border-right: 1px solid var(--grey) !important;
+  }
+
+  .navbar .container-fluid .navbar-collapse.collapsing {
+    left: -75%;
+    transition: height 0s ease;
+  }
+
+  .navbar .container-fluid .navbar-collapse.show {
+    left: 0;
+    transition: left 300ms ease-in-out;
+  }
+
+  .navbar
+    .container-fluid
+    .navbar-toggler.collapsed
+    ~ .navbar
+    .container-fluid
+    .navbar-collapse {
+    transition: left 300ms ease-in-out;
+  }
+
+  .navbar .container-fluid .navbar-nav,
+  .navbar .container-fluid .menu-1,
+  .navbar .container-fluid .menu-2 {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .navbar .container-fluid .nav-item {
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+
+  .navbar .container-fluid .desktop-hamburger {
+    display: none;
+  }
+
+  .navbar .container-fluid .navbar-toggler {
+    visibility: visible;
+    pointer-events: auto;
+    border-right: 1px solid var(--grey) !important;
+    color: var(--black);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0;
+  }
+  #hero {
+    padding: 8rem 2rem 2rem;
+  }
+  #hero .container-fluid .happy-customers,
+  #hero .container-fluid .hero-image,
+  #hero .container-fluid .learn-more {
+    display: none !important;
+  }
+  #hero .container-fluid .hero-text-center {
+    width: 100%;
+    order: 1;
+  }
+  #hero .container-fluid .hero-text-center p {
+    width: 70%;
+    margin: auto auto;
+  }
+  #hero .container-fluid .hero-video {
+    order: 2;
+    width: 40% !important;
+    top: 60px;
+  }
+  #hero .container-fluid .hero-text-secondary {
+    width: 100%;
+    order: 3;
+    margin-top: 80px;
+  }
+  #hero .container-fluid .row .hero-text-center h1 {
+    font-size: 3rem;
+  }
+  #hero .container-fluid .row .hero-video .video-text {
+    width: 100px;
+    height: 100px;
+    top: -40px;
+  }
+  #hero .container-fluid .row .hero-video .video-text p {
+    font-size: 12px;
+    width: 70%;
+  }
+  #hero .container-fluid .row .hero-video .video-btn {
+    width: 35px;
+    height: 35px;
+    top: 40px;
+  }
+  #featured .container-fluid .featured-content {
+    padding: 2rem 1rem;
+  }
+  #featured .container-fluid .featured-content p {
+    font-size: 1rem;
+  }
+  #featured .container-fluid .featured-content span {
+    font-size: 0.8rem;
+  }
+  #popular .container-fluid {
+    padding: 6rem 2rem;
+  }
+  #popular .container-fluid .popular-heading h1 {
+    font-size: 3rem;
+  }
+  #popular .container-fluid .popular-image .image-1,
+  #popular .container-fluid .popular-image .image-2 {
+    display: none;
+  }
+  #popular .container-fluid .popular-image .image-3 {
+    width: 50%;
+  }
+  #popular .container-fluid .popular-image .image-3 .arrow {
+    right: -70px;
+    bottom: -70px;
+  }
+  #popular .container-fluid .popular-image .image-3 .arrow p {
+    font-size: 2.5rem;
+  }
+  #popular .container-fluid .popular-description p {
+    margin-top: 6rem;
+  }
+  #discount .container-fluid {
+    gap: 6rem;
+  }
+  #discount .container-fluid .discount-text {
+    width: 100%;
+  }
+  #discount .container-fluid .discount-text h1 {
+    font-size: 3rem;
+  }
+  #signature .container-fluid {
+    padding: 6rem 4rem;
+  }
+  #signature .container-fluid .signature-content .tabs {
+    width: 90%;
+    margin: 2rem auto 4rem;
+  }
+  #signature .container-fluid .signature-content .tabs .nav-item .nav-link {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+  #signature .container-fluid .signature-content .cards-container .card {
+    width: calc(45% - 20px);
+  }
+  #benefits .container-fluid {
+    padding: 6rem 2rem;
+  }
+  #benefits .container-fluid .benefits-content .left {
+    width: 100%;
+  }
+  #benefits .container-fluid .benefits-content .right {
+    width: 100%;
+    margin: auto auto;
+  }
+  #benefits .container-fluid .benefits-content .right .image-1 {
+    width: 40%;
+  }
+  #benefits .container-fluid .benefits-content .right .image-2 {
+    width: 25%;
+    left: 70%;
+    top: 20px;
+    transform: translate(-40%, 20px);
+  }
+  #benefits .container-fluid .benefits-content .right p {
+    right: 80px;
+    bottom: -40px;
+    font-size: 2.5rem;
+  }
+  #socmed .container-fluid {
+    padding: 6rem 2rem;
+  }
+  #socmed .container-fluid .socmed-heading {
+    margin-bottom: 3rem;
+  }
+  #socmed .container-fluid .socmed-content {
+    margin-bottom: 15px;
+    gap: 15px;
+    padding: 0 2rem;
+  }
+  #socmed .container-fluid .socmed-content img {
+    width: calc(33.33% - 15px);
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border: 1px solid var(--low-gold);
+  }
+  #subscribe .container-fluid {
+    padding: 6rem 2rem;
+  }
+  #subscribe .container-fluid .subscribe-form input {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  #hero .container-fluid .row .happy-customer-img img {
+    width: 70px;
+    height: 70px;
+  }
+
+  #hero .container-fluid .row .happy-customers p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #featured .container-fluid .featured-content {
+    padding: 2rem 0.5rem;
+  }
+  #featured .container-fluid .featured-content p {
+    font-size: 0.8rem;
+  }
+  #featured .container-fluid .featured-content span {
+    font-size: 0.5rem;
+  }
+  #signature .container-fluid .signature-content .tabs {
+    width: 100%;
+    margin: 2rem auto 4rem;
+  }
+  #signature .container-fluid .signature-content .tabs .nav-item {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  #signature .container-fluid .signature-content .tabs .nav-item .nav-link {
+    font-size: 1rem;
+    text-align: center;
+  }
+  #signature .container-fluid .signature-content .cards-container .card {
+    width: calc(100% - 20px);
+  }
+  #hero .container-fluid .row .hero-text-center .btn-hero {
+    font-size: 0.9rem;
+    padding: 0.75rem 1.75rem;
+  }
+  #discount .container-fluid .discount-text .btn-discount {
+    font-size: 0.9rem;
+    padding: 0.75rem 1.75rem;
+  }
+  #socmed .container-fluid .btn-socmed {
+    padding: 0.75rem 1.75rem;
+    font-size: 0.9rem;
+  }
+  #subscribe .container-fluid .subscribe-form .btn-subscribe {
+    font-size: 0.9rem;
+    padding: 0.75rem 1.75rem;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  #discount .container-fluid .discount-image .circle,
+  #discount .container-fluid .discount-image .images .image-2 {
+    display: none;
+  }
+  #discount .container-fluid .discount-image .images {
+    display: flex;
+  }
+  #discount .container-fluid .discount-image .images .image-1 {
+    width: 80%;
+  }
+  #benefits .container-fluid .benefits-content .right {
+    width: 100%;
+    margin: auto auto;
+  }
+  #benefits .container-fluid .benefits-content .right .image-1 {
+    width: 50%;
+  }
+  #benefits .container-fluid .benefits-content .right .image-2 {
+    width: 30%;
+    left: 70%;
+    top: 20px;
+    transform: translate(-30%, 20px);
+  }
+  #benefits .container-fluid .benefits-content .right p {
+    right: 80px;
+    bottom: -60px;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #hero .container-fluid .row .hero-text-secondary p {
+    width: 80%;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  #hero .container-fluid .row .hero-text-secondary h1 {
+    font-size: 3rem;
+  }
+  #featured .container-fluid .featured-content p {
+    font-size: 0.6rem;
+  }
+  #featured .container-fluid .featured-content span {
+    font-size: 0.4rem;
+  }
+  #popular .container-fluid .popular-heading h1 {
+    font-size: 2.5rem;
+  }
+  #discount .container-fluid .discount-text h1 {
+    font-size: 2.5rem;
+  }
+  #signature .container-fluid .signature-heading h1 {
+    font-size: 2.5rem;
+  }
+  #benefits .container-fluid .benefits-heading h1 {
+    font-size: 2.5rem;
+  }
+  #benefits .container-fluid .benefits-heading h1 span {
+    font-size: 3rem;
+  }
+  #benefits .container-fluid .benefits-content .right p {
+    right: 60px;
+    bottom: -60px;
+    font-size: 1.5rem;
+  }
+  #socmed .container-fluid .socmed-heading h1 {
+    font-size: 2.5rem;
+  }
+  #subscribe .container-fluid .subscribe-heading h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #hero .container-fluid .row .hero-text-secondary p {
+    width: 75%;
+  }
+  #hero .container-fluid .row .hero-text-secondary h1 {
+    font-size: 2.5rem;
+  }
+  #hero .container-fluid .hero-video {
+    width: 70% !important;
+  }
+  #hero .container-fluid .row .hero-video img {
+    width: 100%;
+  }
+  #popular .container-fluid .popular-heading h1 {
+    font-size: 2rem;
+  }
+  #discount .container-fluid .discount-text h1 {
+    font-size: 2rem;
+  }
+  #discount .container-fluid .discount-image .images {
+    padding-left: 0;
+  }
+  #discount .container-fluid .discount-image .images .image-1 {
+    width: 100%;
+  }
+  #discount .container-fluid .discount-image .images p {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+  }
+  #signature .container-fluid .signature-heading h1 {
+    font-size: 2rem;
+  }
+  #benefits .container-fluid .benefits-heading h1 {
+    font-size: 2rem;
+  }
+  #benefits .container-fluid .benefits-heading h1 span {
+    font-size: 2.5rem;
+  }
+  #socmed .container-fluid .socmed-heading h1 {
+    font-size: 2rem;
+  }
+  #subscribe .container-fluid .subscribe-heading h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 442px) {
+  #hero .container-fluid .row .hero-text-secondary h1 {
+    font-size: 2rem;
+  }
+  #popular .container-fluid .popular-heading h1 {
+    font-size: 1.5rem;
+  }
+  #discount .container-fluid .discount-text h1 {
+    font-size: 1.5rem;
+  }
+  #signature .container-fluid .signature-heading h1 {
+    font-size: 1.5rem;
+  }
+  #benefits .container-fluid .benefits-heading h1 {
+    font-size: 1.5rem;
+  }
+  #benefits .container-fluid .benefits-heading h1 span {
+    font-size: 2rem;
+  }
+  #socmed .container-fluid .socmed-heading h1 {
+    font-size: 1.5rem;
+  }
+  #subscribe .container-fluid .subscribe-heading h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1410px) {
+  .navbar .container-fluid .navbar-nav {
+    width: 45% !important;
+    left: 36%;
+  }
+}
